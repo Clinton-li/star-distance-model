@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
     :root {
       --bg:       #0D0D0D;
       --surface:  #1C1C1C;
@@ -21,9 +21,9 @@
       --font-body:    'Inter', sans-serif;
       --font-mono:    'JetBrains Mono', monospace;
     }
-
+ 
     html { scroll-behavior: smooth; }
-
+ 
     body {
       background: var(--bg);
       color: var(--text);
@@ -32,7 +32,7 @@
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
-
+ 
     /* ── NAV ── */
     nav {
       position: sticky;
@@ -46,7 +46,7 @@
       padding: 0 48px;
       height: 56px;
     }
-
+ 
     .nav-brand {
       font-family: var(--font-display);
       font-size: 14px;
@@ -56,13 +56,13 @@
       text-transform: uppercase;
       text-decoration: none;
     }
-
+ 
     .nav-links {
       display: flex;
       gap: 36px;
       list-style: none;
     }
-
+ 
     .nav-links a {
       font-family: var(--font-body);
       font-size: 13px;
@@ -72,20 +72,20 @@
       letter-spacing: 0.04em;
       transition: color 0.2s;
     }
-
+ 
     .nav-links a:hover { color: var(--text); }
-
+ 
     /* ── HERO ── */
     #hero {
       padding: 80px 48px 64px;
       max-width: 1200px;
       margin: 0 auto;
     }
-
+ 
     .hero-text {
       margin-bottom: 56px;
     }
-
+ 
     .hero-text h1 {
       font-family: var(--font-display);
       font-size: clamp(36px, 5vw, 64px);
@@ -95,9 +95,9 @@
       color: var(--text);
       margin-bottom: 20px;
     }
-
+ 
     .hero-text h1 span { color: var(--accent); }
-
+ 
     .hero-text p {
       font-size: 18px;
       font-weight: 300;
@@ -105,7 +105,7 @@
       max-width: 560px;
       line-height: 1.6;
     }
-
+ 
     /* ── CONSTELLATION GALLERY ── */
     .constellation-gallery {
       display: flex;
@@ -114,7 +114,7 @@
       border-radius: 4px;
       overflow: hidden;
     }
-
+ 
     .constellation-item {
       flex: 1;
       position: relative;
@@ -123,9 +123,9 @@
       overflow: hidden;
       min-width: 0;
     }
-
+ 
     .constellation-item:hover { flex: 3; }
-
+ 
     .constellation-item img {
       width: 100%;
       height: 100%;
@@ -134,9 +134,9 @@
       transition: filter 0.5s ease;
       display: block;
     }
-
+ 
     .constellation-item:hover img { filter: grayscale(0%); }
-
+ 
     .constellation-label {
       position: absolute;
       bottom: 0;
@@ -151,7 +151,7 @@
       text-transform: uppercase;
       color: var(--text);
     }
-
+ 
     .constellation-placeholder {
       width: 100%;
       height: 100%;
@@ -164,16 +164,16 @@
       filter: grayscale(100%);
       transition: filter 0.5s ease;
     }
-
+ 
     .constellation-item:hover .constellation-placeholder { filter: grayscale(0%); }
-
+ 
     .placeholder-label {
       font-family: var(--font-mono);
       font-size: 11px;
       color: var(--muted);
       letter-spacing: 0.06em;
     }
-
+ 
     /* ── SECTIONS ── */
     section {
       max-width: 1200px;
@@ -181,7 +181,7 @@
       padding: 72px 48px;
       border-top: 1px solid var(--border);
     }
-
+ 
     .section-label {
       font-family: var(--font-mono);
       font-size: 11px;
@@ -190,7 +190,7 @@
       color: var(--accent);
       margin-bottom: 24px;
     }
-
+ 
     h2 {
       font-family: var(--font-display);
       font-size: clamp(24px, 3vw, 36px);
@@ -199,7 +199,7 @@
       color: var(--text);
       margin-bottom: 24px;
     }
-
+ 
     h3 {
       font-family: var(--font-display);
       font-size: 18px;
@@ -208,13 +208,13 @@
       margin-bottom: 12px;
       margin-top: 32px;
     }
-
+ 
     p { color: var(--muted); margin-bottom: 16px; max-width: 720px; }
-
+ 
     p:last-child { margin-bottom: 0; }
-
+ 
     strong { color: var(--text); font-weight: 500; }
-
+ 
     /* ── HOW IT WORKS GRID ── */
     .how-grid {
       display: grid;
@@ -222,12 +222,12 @@
       gap: 2px;
       margin-top: 40px;
     }
-
+ 
     .how-card {
       background: var(--surface);
       padding: 32px 28px;
     }
-
+ 
     .how-card-number {
       font-family: var(--font-mono);
       font-size: 11px;
@@ -235,23 +235,23 @@
       letter-spacing: 0.1em;
       margin-bottom: 16px;
     }
-
+ 
     .how-card h3 {
       font-size: 16px;
       margin-top: 0;
       margin-bottom: 12px;
     }
-
+ 
     .how-card p { font-size: 14px; max-width: none; }
-
+ 
     /* ── BUILD GUIDE ── */
     .build-steps { margin-top: 40px; }
-
+ 
     .step {
       border: 1px solid var(--border);
       margin-bottom: 2px;
     }
-
+ 
     .step-header {
       display: flex;
       align-items: center;
@@ -261,9 +261,9 @@
       user-select: none;
       transition: background 0.2s;
     }
-
+ 
     .step-header:hover { background: var(--surface); }
-
+ 
     .step-number {
       font-family: var(--font-mono);
       font-size: 11px;
@@ -272,7 +272,7 @@
       flex-shrink: 0;
       width: 28px;
     }
-
+ 
     .step-title {
       font-family: var(--font-display);
       font-size: 16px;
@@ -280,23 +280,23 @@
       color: var(--text);
       flex: 1;
     }
-
+ 
     .step-toggle {
       font-size: 18px;
       color: var(--muted);
       transition: transform 0.3s;
       flex-shrink: 0;
     }
-
+ 
     .step.open .step-toggle { transform: rotate(45deg); }
-
+ 
     .step-body {
       display: none;
       padding: 0 28px 32px 76px;
     }
-
+ 
     .step.open .step-body { display: block; }
-
+ 
     /* ── TABLES ── */
     table {
       width: 100%;
@@ -304,7 +304,7 @@
       margin: 20px 0;
       font-size: 14px;
     }
-
+ 
     th {
       text-align: left;
       font-family: var(--font-mono);
@@ -315,18 +315,18 @@
       padding: 10px 16px;
       border-bottom: 1px solid var(--border);
     }
-
+ 
     td {
       padding: 10px 16px;
       border-bottom: 1px solid var(--border);
       color: var(--muted);
       vertical-align: top;
     }
-
+ 
     td:first-child { color: var(--text); }
-
+ 
     tr:last-child td { border-bottom: none; }
-
+ 
     /* ── CODE / MONO ── */
     code {
       font-family: var(--font-mono);
@@ -336,7 +336,7 @@
       border-radius: 2px;
       color: var(--accent);
     }
-
+ 
     .code-block {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -345,7 +345,7 @@
       overflow-x: auto;
       border-radius: 2px;
     }
-
+ 
     .code-block pre {
       font-family: var(--font-mono);
       font-size: 13px;
@@ -353,21 +353,21 @@
       line-height: 1.6;
       white-space: pre;
     }
-
+ 
     /* ── LISTS ── */
     .step-body ul, .step-body ol {
       padding-left: 20px;
       margin: 12px 0;
     }
-
+ 
     .step-body li {
       color: var(--muted);
       margin-bottom: 8px;
       font-size: 15px;
     }
-
+ 
     .step-body li strong { color: var(--text); }
-
+ 
     /* ── IMAGE PLACEHOLDER ── */
     .img-slot {
       background: var(--surface);
@@ -379,21 +379,21 @@
       margin: 24px 0;
       border-radius: 2px;
     }
-
+ 
     .img-slot span {
       font-family: var(--font-mono);
       font-size: 12px;
       color: var(--muted);
       letter-spacing: 0.06em;
     }
-
+ 
     .img-slot img {
       width: 100%;
       height: auto;
       display: block;
       border-radius: 2px;
     }
-
+ 
     /* ── YOUTUBE EMBED ── */
     .video-wrap {
       position: relative;
@@ -404,14 +404,14 @@
       border: 1px solid var(--border);
       border-radius: 2px;
     }
-
+ 
     .video-wrap iframe {
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
       border: none;
     }
-
+ 
     /* ── OPTIONAL BADGE ── */
     .badge-optional {
       display: inline-block;
@@ -426,7 +426,7 @@
       margin-left: 10px;
       vertical-align: middle;
     }
-
+ 
     /* ── DOWNLOADS ── */
     .downloads-grid {
       display: grid;
@@ -434,7 +434,7 @@
       gap: 2px;
       margin-top: 40px;
     }
-
+ 
     .download-card {
       background: var(--surface);
       padding: 24px 28px;
@@ -442,19 +442,19 @@
       flex-direction: column;
       gap: 8px;
     }
-
+ 
     .download-name {
       font-family: var(--font-mono);
       font-size: 13px;
       color: var(--text);
     }
-
+ 
     .download-desc {
       font-size: 13px;
       color: var(--muted);
       flex: 1;
     }
-
+ 
     .btn {
       display: inline-block;
       margin-top: 12px;
@@ -471,15 +471,15 @@
       transition: border-color 0.2s, color 0.2s;
       align-self: flex-start;
     }
-
+ 
     .btn:hover { border-color: var(--accent); color: var(--accent); }
-
+ 
     .btn-disabled {
       color: var(--muted);
       cursor: default;
       pointer-events: none;
     }
-
+ 
     .coming-soon {
       font-family: var(--font-mono);
       font-size: 11px;
@@ -487,7 +487,7 @@
       letter-spacing: 0.06em;
       margin-top: 12px;
     }
-
+ 
     /* ── FOOTER ── */
     footer {
       border-top: 1px solid var(--border);
@@ -497,13 +497,13 @@
       align-items: center;
       max-width: 100%;
     }
-
+ 
     footer span {
       font-size: 13px;
       color: var(--muted);
       font-family: var(--font-body);
     }
-
+ 
     /* ── RESPONSIVE ── */
     /* ── CIRCUIT DIAGRAM ── */
     .circuit-diagram {
@@ -515,63 +515,63 @@
       font-family: var(--font-mono);
       font-size: 13px;
     }
-
+ 
     .circuit-inner {
       display: flex;
       align-items: stretch;
       gap: 16px;
     }
-
+ 
     .circuit-left {
       flex: 1;
       display: flex;
       flex-direction: column;
       min-width: 0;
     }
-
+ 
     .rail-row {
       display: flex;
       align-items: center;
     }
-
+ 
     .rail-line {
       flex: 1;
       height: 2px;
       background: var(--text);
     }
-
+ 
     .rail-label {
       font-size: 12px;
       color: var(--muted);
       white-space: nowrap;
       padding-left: 12px;
     }
-
+ 
     .circuit-columns {
       display: flex;
       align-items: stretch;
     }
-
+ 
     .circuit-col {
       display: flex;
       flex-direction: column;
       align-items: center;
       flex: 1;
     }
-
+ 
     .wire-v {
       width: 2px;
       height: 28px;
       background: var(--text);
     }
-
+ 
     .component {
       color: var(--accent);
       font-size: 13px;
       padding: 2px 0;
       white-space: nowrap;
     }
-
+ 
     .circuit-annotation {
       display: flex;
       flex-direction: column;
@@ -582,9 +582,9 @@
       padding-left: 16px;
       justify-content: space-around;
     }
-
+ 
     .circuit-annotation span { line-height: 1; }
-
+ 
     @media (max-width: 768px) {
       nav { padding: 0 20px; }
       .nav-links { gap: 20px; }
@@ -595,14 +595,14 @@
       footer { padding: 24px 20px; flex-direction: column; gap: 8px; text-align: center; }
       .downloads-grid { grid-template-columns: 1fr; }
     }
-
+ 
     @media (prefers-reduced-motion: reduce) {
       .constellation-item, .constellation-item img, .step-toggle { transition: none; }
     }
   </style>
 </head>
 <body>
-
+ 
   <!-- NAV -->
   <nav>
     <a href="#hero" class="nav-brand">Star Distance Model</a>
@@ -613,39 +613,30 @@
       <li><a href="#downloads">Downloads</a></li>
     </ul>
   </nav>
-
+ 
   <!-- HERO -->
   <div id="hero">
     <div class="hero-text">
       <h1>Star Distance <span>Model</span></h1>
       <p>A 3D printed science communication display — build your own constellation from real astronomical data.</p>
     </div>
-
+ 
     <div class="constellation-gallery">
       <div class="constellation-item">
-        <!-- Replace src with render-crux.jpg -->
-        <div class="constellation-placeholder">
-          <span class="placeholder-label">render-crux.jpg</span>
-        </div>
+        <img src="render-crux.jpg" alt="Crux constellation model render" />
         <div class="constellation-label">Crux</div>
       </div>
       <div class="constellation-item">
-        <!-- Replace src with render-orion.jpg -->
-        <div class="constellation-placeholder">
-          <span class="placeholder-label">render-orion.jpg</span>
-        </div>
+        <img src="render-orion.jpg" alt="Orion constellation model render" />
         <div class="constellation-label">Orion</div>
       </div>
       <div class="constellation-item">
-        <!-- Replace src with render-scorpio.jpg -->
-        <div class="constellation-placeholder">
-          <span class="placeholder-label">render-scorpio.jpg</span>
-        </div>
+        <img src="render-scorpio.jpg" alt="Scorpio constellation model render" />
         <div class="constellation-label">Scorpio</div>
       </div>
     </div>
   </div>
-
+ 
   <!-- OVERVIEW -->
   <section id="overview">
     <div class="section-label">Overview</div>
@@ -653,18 +644,17 @@
     <p>The Star Distance Model uses a custom Blender add-on and 3D printing to build a physical display of a real constellation — one that reveals the true distances of its stars from Earth.</p>
     <p>Each star is a clear acrylic rod mounted on a curved back panel. The rods point toward a virtual viewpoint so the constellation reads correctly from the front. Stand there, and you are Earth. The sphere at each rod tip sits at a position in space that corresponds to that star's real distance — closer stars reach further out toward you, distant stars sit further back.</p>
     <p>Everything is generated from a CSV of star data. Enter your constellation, run the add-on, and it outputs a print-ready 3D model. This site walks you through building the physical model from scratch.</p>
-
+ 
     <div class="img-slot" id="slot-overview">
-      <!-- Replace with viewer perspective photo/render -->
-      <span>viewer-perspective.jpg — constellation as seen from the front</span>
+      <img src="viewer-perspective.jpg" alt="Constellation as seen from the front" />
     </div>
   </section>
-
+ 
   <!-- HOW IT WORKS -->
   <section id="how-it-works">
     <div class="section-label">How It Works</div>
     <h2>The concept</h2>
-
+ 
     <div class="how-grid">
       <div class="how-card">
         <div class="how-card-number">01</div>
@@ -683,14 +673,14 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- BUILD GUIDE -->
   <section id="build-guide">
     <div class="section-label">Build Guide</div>
     <h2>Build your own</h2>
-
+ 
     <div class="build-steps">
-
+ 
       <!-- STEP 1 -->
       <div class="step open" id="step-1">
         <div class="step-header" onclick="toggleStep('step-1')">
@@ -699,7 +689,7 @@
           <span class="step-toggle">+</span>
         </div>
         <div class="step-body">
-
+ 
           <h3>3D Printed Parts</h3>
           <p>All parts are generated by the Blender add-on and exported as STL files.</p>
           <ul>
@@ -708,7 +698,7 @@
             <li>Star spheres — one per star</li>
             <li>Acrylic rods <span class="badge-optional">optional</span> — print in clear resin if not cutting from stock rod</li>
           </ul>
-
+ 
           <h3>Off-the-Shelf Parts</h3>
           <table>
             <thead>
@@ -730,7 +720,7 @@
               <tr><td>Posca pens <span class="badge-optional">optional</span></td><td>PC-3M — colours per cutting list</td><td>See cutting list</td></tr>
             </tbody>
           </table>
-
+ 
           <h3>Tools</h3>
           <ul>
             <li>Blender 4.x</li>
@@ -741,10 +731,10 @@
             <li>Drill (for removing support material)</li>
             <li>Sandpaper</li>
           </ul>
-
+ 
         </div>
       </div>
-
+ 
       <!-- STEP 2 -->
       <div class="step" id="step-2">
         <div class="step-header" onclick="toggleStep('step-2')">
@@ -753,9 +743,9 @@
           <span class="step-toggle">+</span>
         </div>
         <div class="step-body">
-
+ 
           <p>The add-on reads two CSV files — one for stars, one for constellation lines. You can use any constellation or any set of stars you choose.</p>
-
+ 
           <h3>stars.csv</h3>
           <p>One row per star. Required fields:</p>
           <table>
@@ -774,14 +764,14 @@
               <tr><td>Spectral class</td><td>Single letter: O B A F G K M</td><td>B</td></tr>
             </tbody>
           </table>
-
+ 
           <p>A few rules:</p>
           <ul>
             <li>Southern declinations use a negative degrees value</li>
             <li>Spectral class is the first letter only — drop any suffix (e.g. <code>B2</code> → <code>B</code>)</li>
             <li>Distance must be in light years</li>
           </ul>
-
+ 
           <h3>lines.csv <span class="badge-optional">optional</span></h3>
           <p>Defines which stars are connected by constellation lines on the back panel. If not provided, no lines are drawn.</p>
           <table>
@@ -793,19 +783,19 @@
               <tr><td>star2</td><td>Must match name in stars.csv exactly</td><td>Gacrux</td></tr>
             </tbody>
           </table>
-
+ 
           <p>Rules:</p>
           <ul>
             <li>Header row must be exactly <code>star1,star2</code></li>
             <li>Names are case sensitive</li>
             <li>One connection per row</li>
           </ul>
-
+ 
           <p>Download templates and example files in the <a href="#downloads" style="color: var(--accent);">Downloads section</a>.</p>
-
+ 
         </div>
       </div>
-
+ 
       <!-- STEP 3 -->
       <div class="step" id="step-3">
         <div class="step-header" onclick="toggleStep('step-3')">
@@ -814,9 +804,9 @@
           <span class="step-toggle">+</span>
         </div>
         <div class="step-body">
-
+ 
           <p>The add-on generates the full 3D model geometry from your CSV files. Install it once, point it at your data, and it outputs everything ready to print.</p>
-
+ 
           <h3>Installing the add-on</h3>
           <ol>
             <li>Download <code>constellation_model.zip</code> from the Downloads section</li>
@@ -825,28 +815,28 @@
             <li>Enable the add-on by ticking the checkbox next to <strong>Constellation Model</strong></li>
             <li>The add-on panel appears in the 3D viewport sidebar under <code>N → Constellation</code></li>
           </ol>
-
+ 
           <h3>Generating your model</h3>
-
+ 
           <div class="img-slot">
-            <span>blender-ui-1.png — add-on panel (top)</span>
+            <img src="blender-ui-1.png" alt="Blender add-on panel top half" />
           </div>
           <div class="img-slot">
-            <span>blender-ui-2.png — add-on panel (bottom)</span>
+            <img src="blender-ui-2.png" alt="Blender add-on panel bottom half" />
           </div>
-
+ 
           <p><strong>Input Files</strong></p>
           <ul>
             <li><strong>Stars CSV</strong> — point this to your <code>stars.csv</code> file</li>
             <li><strong>Lines CSV</strong> — point this to your <code>lines.csv</code> file (optional)</li>
           </ul>
-
+ 
           <p><strong>Rod Settings</strong></p>
           <ul>
             <li><strong>Min Rod Length (mm)</strong> — shortest rod in the model. Default 20mm</li>
             <li><strong>Max Rod Length (mm)</strong> — longest rod in the model. Default 500mm. If your star distance range fits within these limits, true scale is used. If not, the add-on normalises — the closest star gets 500mm, the furthest gets 20mm</li>
           </ul>
-
+ 
           <p><strong>Panel Settings</strong></p>
           <ul>
             <li><strong>Max Panel Size (mm)</strong> — maximum width or height of the back panel. Default 250mm</li>
@@ -854,7 +844,7 @@
             <li><strong>Back Panel Thickness (mm)</strong> — structural thickness of the panel. Default 10mm</li>
             <li><strong>Line Width (mm)</strong> — width of recessed constellation line channels. Default 2mm</li>
           </ul>
-
+ 
           <p><strong>Star Labels</strong></p>
           <ul>
             <li><strong>Show Star Labels</strong> — embeds star names into the panel surface</li>
@@ -862,36 +852,36 @@
             <li><strong>Label Font Size (mm)</strong> — size of embossed text. Default 10mm</li>
             <li><strong>Font</strong> — optional custom font file. Leave blank to use Blender's default</li>
           </ul>
-
+ 
           <p><strong>LED Box Settings</strong></p>
           <ul>
             <li><strong>LED Box Depth (mm)</strong> — depth of the LED housing box. Default 45mm. If using a different M4 screw length, enter your screw length minus 5mm here (minimum 35mm)</li>
           </ul>
-
+ 
           <p><strong>Components</strong></p>
           <ul>
             <li><strong>Generate LED Box</strong> — include the LED box in the model. Untick if building without electronics</li>
             <li><strong>Generate Preview Rods</strong> — include preview rod geometry in the viewport. For visualisation only — not printed</li>
             <li><strong>Generate Star Spheres</strong> — include the sphere tip for each rod</li>
           </ul>
-
+ 
           <p><strong>View</strong></p>
           <ul>
             <li><strong>Switch to Layout View</strong> — rearranges all parts flat for print preparation</li>
           </ul>
-
+ 
           <p>Click <strong>Generate Model</strong> to run. A cutting list is automatically saved to your Desktop as a text file — it includes rod lengths, spectral classes, and Posca pen colours for each star.</p>
-
+ 
           <h3>Exporting for print</h3>
           <p>Export each part individually as STL via <code>File → Export → STL</code>.</p>
-
+ 
           <div class="img-slot">
-            <span>blender-viewport.jpg — generated model in Blender 3D viewport</span>
+            <img src="blender-viewport.jpg" alt="Generated model in Blender 3D viewport" />
           </div>
-
+ 
         </div>
       </div>
-
+ 
       <!-- STEP 4 -->
       <div class="step" id="step-4">
         <div class="step-header" onclick="toggleStep('step-4')">
@@ -900,13 +890,13 @@
           <span class="step-toggle">+</span>
         </div>
         <div class="step-body">
-
+ 
           <p>Load your exported STL files into PrusaSlicer. The back panel, LED box, and star spheres are separate prints.</p>
-
+ 
           <div class="img-slot">
-            <span>prusaslicer.png — back panel loaded in PrusaSlicer</span>
+            <img src="prusaslicer.png" alt="Back panel loaded in PrusaSlicer" />
           </div>
-
+ 
           <h3>Print recommendations</h3>
           <ul>
             <li><strong>Printer</strong> — Prusa XL for multicolour (star labels and constellation lines in a second colour). Bambu Labs H2D for alternative materials</li>
@@ -914,17 +904,17 @@
             <li><strong>Infill</strong> — 7%</li>
             <li><strong>Supports</strong> — collar areas and insert holes on the back of the panel only</li>
           </ul>
-
+ 
           <h3>Back panel orientation</h3>
           <p>Place the back panel on its long side — one of the long faces flat on the print bed. The Layout View in the add-on should already orient it correctly when you export.</p>
           <p>For multicolour prints, right-click the model in PrusaSlicer and select <code>Split to Parts</code>. This separates the constellation lines, star labels, and back panel body into individual objects so you can assign a different filament colour to each.</p>
-
+ 
           <h3>Star spheres</h3>
           <p>Split each sphere in half and print each hemisphere with the flat face down. No supports needed.</p>
-
+ 
           <h3>Heat set inserts</h3>
           <p>Heat set inserts fasten the LED box to the back panel (M4) and secure the acrylic rods in the collars (M3). Install M4 inserts into the back panel screw holes first, then M3 inserts into each collar.</p>
-
+ 
           <div class="video-wrap">
             <iframe
               src="https://www.youtube.com/embed/P7nHyI1TwKY"
@@ -932,10 +922,10 @@
               allowfullscreen>
             </iframe>
           </div>
-
+ 
         </div>
       </div>
-
+ 
       <!-- STEP 5 -->
       <div class="step" id="step-5">
         <div class="step-header" onclick="toggleStep('step-5')">
@@ -944,9 +934,9 @@
           <span class="step-toggle">+</span>
         </div>
         <div class="step-body">
-
+ 
           <p>Each star is lit by a single white LED mounted at the end of its collar, behind the back panel. All LEDs run in parallel from a 4×AA battery pack.</p>
-
+ 
           <h3>Circuit diagram</h3>
           <div class="circuit-diagram">
             <div class="circuit-inner">
@@ -1010,7 +1000,7 @@
               </div>
             </div>
           </div>
-
+ 
           <h3>Resistor calculation</h3>
           <p>Each LED requires a current-limiting resistor:</p>
           <div class="code-block">
@@ -1018,7 +1008,7 @@
 R = (6.0V − 3.2V) ÷ 0.020A = 140Ω  →  nearest standard value: 150Ω</pre>
           </div>
           <p>Use one 150Ω resistor per LED regardless of how many stars your model has.</p>
-
+ 
           <h3>Wiring</h3>
           <ol>
             <li>Run a positive rail and a negative rail the length of the LED box</li>
@@ -1026,10 +1016,10 @@ R = (6.0V − 3.2V) ÷ 0.020A = 140Ω  →  nearest standard value: 150Ω</pre>
             <li>Solder the LED cathode (short leg) to the negative rail</li>
             <li>Connect the battery box positive lead to the positive rail and negative lead to the negative rail</li>
           </ol>
-
+ 
         </div>
       </div>
-
+ 
       <!-- STEP 6 -->
       <div class="step" id="step-6">
         <div class="step-header" onclick="toggleStep('step-6')">
@@ -1038,11 +1028,11 @@ R = (6.0V − 3.2V) ÷ 0.020A = 140Ω  →  nearest standard value: 150Ω</pre>
           <span class="step-toggle">+</span>
         </div>
         <div class="step-body">
-
+ 
           <div class="img-slot">
-            <span>model-complete.jpg — completed lit model from the front</span>
+            <img src="model-complete.jpg" alt="Completed lit model from the front" />
           </div>
-
+ 
           <h3>Acrylic rods</h3>
           <ol>
             <li>Cut each rod to the length specified in the cutting list</li>
@@ -1050,20 +1040,20 @@ R = (6.0V − 3.2V) ÷ 0.020A = 140Ω  →  nearest standard value: 150Ω</pre>
             <li>Paint the base of each rod with the Posca pen colour specified in the cutting list. The colour transmits up the rod to the sphere tip</li>
             <li>Allow the paint to dry fully before inserting</li>
           </ol>
-
+ 
           <h3>Inserting rods</h3>
           <ol>
             <li>Insert each rod into its corresponding collar on the back panel — the collar angle is specific to each star, so refer to the cutting list for which rod goes where</li>
             <li>Tighten the M3 grub screws to secure each rod in place</li>
           </ol>
-
+ 
           <h3>Star spheres</h3>
           <ol>
             <li>Glue the two hemisphere halves together with superglue</li>
             <li>Slide the sphere onto the rod tip — the insertion hole is offset so it engulfs the tip correctly</li>
             <li>Secure with a small drop of superglue if needed</li>
           </ol>
-
+ 
           <h3>LED box</h3>
           <ol>
             <li>Place each LED at the end of its corresponding collar, with the LED face pointing into the rod</li>
@@ -1072,101 +1062,101 @@ R = (6.0V − 3.2V) ÷ 0.020A = 140Ω  →  nearest standard value: 150Ω</pre>
             <li>Connect the battery box and route the cable through the slot in the bottom wall of the LED box</li>
             <li>Switch on and check all LEDs are lit evenly</li>
           </ol>
-
+ 
           <h3>Final assembly</h3>
           <ol>
             <li>Place the LED box against the back of the back panel, aligning the screw holes</li>
             <li>Insert M4 screws through the back of the LED box and tighten into the M4 heat set inserts in the back panel</li>
             <li>The LED box and back panel are now one assembly</li>
           </ol>
-
+ 
         </div>
       </div>
   <section id="downloads">
     <div class="section-label">Downloads</div>
     <h2>Files</h2>
-
+ 
     <div class="downloads-grid">
-
+ 
       <div class="download-card">
         <div class="download-name">constellation_model.zip</div>
         <div class="download-desc">Blender add-on</div>
         <div class="coming-soon">Coming soon</div>
       </div>
-
+ 
       <div class="download-card">
         <div class="download-name">View Source on GitHub</div>
         <div class="download-desc">Full source code for the add-on</div>
         <div class="coming-soon">Coming soon</div>
       </div>
-
+ 
       <div class="download-card">
         <div class="download-name">stars_template.csv</div>
         <div class="download-desc">Blank star data template</div>
         <a href="stars_template.csv" download class="btn">Download</a>
       </div>
-
+ 
       <div class="download-card">
         <div class="download-name">lines_template.csv</div>
         <div class="download-desc">Blank constellation lines template</div>
         <a href="lines_template.csv" download class="btn">Download</a>
       </div>
-
+ 
       <div class="download-card">
         <div class="download-name">stars_crux.csv</div>
         <div class="download-desc">Southern Cross — star data</div>
         <a href="stars_crux.csv" download class="btn">Download</a>
       </div>
-
+ 
       <div class="download-card">
         <div class="download-name">lines_crux.csv</div>
         <div class="download-desc">Southern Cross — constellation lines</div>
         <a href="lines_crux.csv" download class="btn">Download</a>
       </div>
-
+ 
       <div class="download-card">
         <div class="download-name">stars_orion.csv</div>
         <div class="download-desc">Orion — star data</div>
         <a href="stars_orion.csv" download class="btn">Download</a>
       </div>
-
+ 
       <div class="download-card">
         <div class="download-name">lines_orion.csv</div>
         <div class="download-desc">Orion — constellation lines</div>
         <a href="lines_orion.csv" download class="btn">Download</a>
       </div>
-
+ 
       <div class="download-card">
         <div class="download-name">stars_scorpio.csv</div>
         <div class="download-desc">Scorpio — star data</div>
         <a href="stars_scorpio.csv" download class="btn">Download</a>
       </div>
-
+ 
       <div class="download-card">
         <div class="download-name">lines_scorpio.csv</div>
         <div class="download-desc">Scorpio — constellation lines</div>
         <a href="lines_scorpio.csv" download class="btn">Download</a>
       </div>
-
+ 
     </div>
   </section>
-
+ 
   <!-- FOOTER -->
   <footer>
     <span>Star Distance Model — 2026</span>
     <span>Clinton</span>
   </footer>
-
+ 
   <script>
     function toggleStep(id) {
       const step = document.getElementById(id);
       step.classList.toggle('open');
     }
-
+ 
     // Highlight active nav link on scroll
     const sections = document.querySelectorAll('section[id], div[id="hero"]');
     const navLinks = document.querySelectorAll('.nav-links a');
-
+ 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -1179,9 +1169,9 @@ R = (6.0V − 3.2V) ÷ 0.020A = 140Ω  →  nearest standard value: 150Ω</pre>
         }
       });
     }, { rootMargin: '-40% 0px -55% 0px' });
-
+ 
     sections.forEach(s => observer.observe(s));
   </script>
-
+ 
 </body>
 </html>
